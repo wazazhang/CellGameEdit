@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<entry>
+<!--
+<OUTPUT>		.\output\<VAR_FILE_NAME>.xml
+<IMAGE_OUTPUT>	.\output\
+<FORMAT_NUMBER_ARRAY_1D>    <>,
+<FORMAT_STRING_ARRAY_1D>	<>,
+<FORMAT_ARRAY_1D>			<>,
+<FORMAT_ARRAY_2D>			{<>},
+<FIXED_STRING_ARRAY>		char,
+-->
+<IMAGE_TYPE>png
+</IMAGE_TYPE>
+<IMAGE_TILE>false
+</IMAGE_TILE>
+<IMAGE_GROUP>true
+</IMAGE_GROUP>
+
+<RESOURCE>
+<resource images_count="<RES_IMAGES_COUNT>" map_count="<RES_MAP_COUNT>" sprite_count="<RES_SPRITE_COUNT>" >
+	
+	<IMAGES>
+  <!--
+  <IGNORE_NULL_CLIP> true
+  -->
+	<images index="<IMAGES_INDEX>" name="<NAME>" size="<COUNT>" 
+		all_width="<ALL_WIDTH>" 
+		all_height="<ALL_HEIGHT>"
+		total_split="<OUTPUT_IMAGE_SPLIT>"
+		output_type="<OUTPUT_IMAGE_TYPE>"
+		output_file="<OUTPUT_IMAGE_FILE>">
+		<CLIP>
+		<clip index="<INDEX>" x="<X>" y="<Y>" width="<W>" height="<H>" data="<DATA>" /></CLIP>
+		<Append data="<APPEND_DATA>" />
+    <ImageInfo>
+      <IMAGE_INFO>
+    </ImageInfo>
+	</images>
+	</IMAGES>
+	
+	<MAP>
+	<map index="<MAP_INDEX>" name="<NAME>" 
+		images_name="<IMAGES_NAME>" 
+		xcount="<X_COUNT>" 
+		ycount="<Y_COUNT>"
+		layer_count="<LAYER_COUNT>"
+		cellw="<CELL_W>" 
+		cellh="<CELL_H>"
+		cd_part_count="<CD_PART_COUNT>">
+		<CD_PART>
+		<cd_part index="<INDEX>" type="<TYPE>" mask="<MASK>" x1="<X1>" y1="<Y1>" x2="<X2>" y2="<Y2>" width="<W>" height="<H>" /></CD_PART>
+		<LAYER>
+		<layer index="<INDEX>"
+			tile_matrix="<TILE_MATRIX>"
+			flip_matrix="<FLIP_MATRIX>"
+			flag_matrix="<FLAG_MATRIX>"
+		/>
+		</LAYER>
+		<Append data="<APPEND_DATA>" />
+	</map>
+	</MAP>
+	
+	<SPRITE>
+	<sprite index="<SPR_INDEX>" name="<NAME>"
+		images_name="<IMAGES_NAME>"
+		scene_part_count="<SCENE_PART_COUNT>"
+		scene_frame_count="<SCENE_FRAME_COUNT>"
+		cd_part_count="<CD_PART_COUNT>"
+		cd_frame_count="<CD_FRAME_COUNT>"
+		animate_count="<ANIMATE_COUNT>"
+		complexMode="<COMPLEX_MODE>">
+		<SCENE_PART>
+		<scene_part index="<INDEX>" tile="<TILE>" x="<X>" y="<Y>" z="<Z>" trans="<TRANS>" alpha="<ALPHA>" rotate="<ROTATE>" scaleX="<SCALE_X>" scaleY="<SCALE_Y>" anchorX="<ANCHOR_X>" anchorY="<ANCHOR_Y>" /></SCENE_PART>
+		<SCENE_FRAME>
+		<scene_frame index="<INDEX>" data_size="<DATA_SIZE>" data="<DATA>" /></SCENE_FRAME>
+		<CD_PART>
+		<cd_part index="<INDEX>" type="<TYPE>" mask="<MASK>" x1="<X1>" y1="<Y1>" x2="<X2>" y2="<Y2>" width="<W>" height="<H>" /></CD_PART>
+		<CD_FRAME>
+		<cd_frame index="<INDEX>" data_size="<DATA_SIZE>" data="<DATA>" /></CD_FRAME>
+		<frames 
+			counts="<FRAME_COUNTS>" 
+			names="<FRAME_NAME>" 
+			animates="<FRAME_ANIMATE>"
+			cd_map="<FRAME_CD_MAP>"
+			cd_atk="<FRAME_CD_ATK>"
+			cd_def="<FRAME_CD_DEF>"
+			cd_ext="<FRAME_CD_EXT>"
+			alpha="<FRAME_ALPHA>"
+			rotate="<FRAME_ROTATE>"
+			scaleX="<FRAME_SCALE_X>"
+			scaleY="<FRAME_SCALE_Y>"
+			fdata="<FRAME_APPEND_DATA>"
+		/>
+		<Append data="<APPEND_DATA>" />
+	</sprite>
+	</SPRITE>
+	
+</resource>
+</RESOURCE>
+
+<LEVEL>
+<level world_count="<LEVEL_WORLD_COUNT>" >
+
+	<WORLD>
+	<world index="<WORLD_INDEX>" name="<NAME>" 
+		grid_x_count="<GRID_X_COUNT>"
+		grid_y_count="<GRID_Y_COUNT>"
+		grid_w="<GRID_W>"
+		grid_h="<GRID_H>"
+		width="<WIDTH>"
+		height="<HEIGHT>"
+		unit_count_map="<UNIT_MAP_COUNT>"
+		unit_count_sprite="<UNIT_SPRITE_COUNT>"
+		unit_count_image="<UNIT_IMAGE_COUNT>"
+		waypoint_count="<WAYPOINT_COUNT>"
+		region_count="<REGION_COUNT>"
+		event_count="<EVENT_COUNT>"
+		data="<DATA>"
+		terrain="<TERRAIN>">
+		<UNIT_MAP>
+		<unit_map index="<INDEX>" map_name="<MAP_NAME>" id="<IDENTIFY>" x="<X>" y="<Y>" images="<SUPER>" map_data="<MAP_DATA>" priority="<PRIORITY>" /></UNIT_MAP>
+		<UNIT_SPRITE>
+		<unit_sprite index="<INDEX>" spr_name="<SPR_NAME>" id="<IDENTIFY>" animate_id="<ANIMATE_ID>" frame_id="<FRAME_ID>" x="<X>" y="<Y>" images="<SUPER>" spr_data="<SPR_DATA>" priority="<PRIORITY>" /></UNIT_SPRITE>
+		<UNIT_IMAGE>
+		<unit_image index="<INDEX>" img_name="<IMG_NAME>" id="<IDENTIFY>" tile_id="<TILE_ID>" anchor="<ANCHOR>" x="<X>" y="<Y>" trans="<TRANS>" img_data="<IMG_DATA>" priority="<PRIORITY>" /></UNIT_IMAGE>
+		<WAYPOINT>
+		<waypoint index="<INDEX>" x="<X>" y="<Y>" path_data="<PATH_DATA>" /></WAYPOINT>
+		<WAYPOINT_LINK>
+		<waypoint_link start="<START>" end="<END>" /></WAYPOINT_LINK>
+		<REGION>
+		<region index="<INDEX>" x="<X>" y="<Y>" width="<W>" height="<H>" shape="<SHAPE>" region_data="<REGION_DATA>" /></REGION>
+		<EVENT>
+		<event index="<INDEX>" id="<ID>" event_name="<EVENT_NAME>" event_file="<EVENT_FILE>" x="<X>" y="<Y>" event_data="<EVENT_DATA>" /></EVENT>
+	</world>
+	</WORLD>
+	
+</level>
+</LEVEL>
+
+
+
+</entry>
+
+
+
+
+
