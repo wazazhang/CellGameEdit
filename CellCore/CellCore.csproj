@@ -140,7 +140,7 @@
       <Project>{0951676D-0FB3-4E35-B9D2-ED28EA141ADA}</Project>
       <Name>DeepCore</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\DeepEditor.Common\DeepEditor.Common.csproj">
+    <ProjectReference Include="..\..\DeepEditor\DeepEditor.Common\DeepEditor.Common.csproj">
       <Project>{f3594e30-da84-4538-baa3-0959b86aa879}</Project>
       <Name>DeepEditor.Common</Name>
     </ProjectReference>
